@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../img/207335.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    position: absolute;
+    top: 45vh;
+    left: 1vw;
+    margin-left: 30px;
+    font-size: 3rem;
+    font-weight: bolder;
+    background: linear-gradient(to bottom right ,rgb(13, 211, 242), rgb(255,180,192));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+h2{
+    position: absolute;
+    top: 52vh;
+    left: 1vw;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+    background: linear-gradient(to bottom right ,rgb(13, 211, 242), rgb(255,180,192));
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.alertt{
+    display: none;
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 10px double whitesmoke !important;
+    border-radius: 10px;
+    border-color: rgb(0,0,0);
+    position: absolute;
+    top: 20vh;
+    left: 55vw;
+    overflow: hidden;
+    background-color: rgb(254, 254, 254, 0.07);
+}
+
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: #E73149;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 400px;
+    left: 190px;
+    z-index: 1000000;
+}
+
+.block{
+    width: 400px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+    background: linear-gradient(to bottom right ,rgb(13, 211, 242), rgb(255,180,192));
+    color: transparent;
+}
+
+.hole{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(0,0,0, 0.8);
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+
+@media (max-width:1410px) {
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:1000px) {
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:900px) {
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    #game{
+        display: none;
+    }
+
+    
+.alertt{
+    font-size: 50px;
+    margin-top: 25%;
+    text-align: center;
+    color: red;
+    display: block;
+}
+}
